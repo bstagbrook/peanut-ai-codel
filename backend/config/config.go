@@ -12,10 +12,10 @@ type config struct {
 	DatabaseURL string `env:"DATABASE_URL" envDefault:"database.db"`
 	Port        int    `env:"PORT" envDefault:"8080"`
 
-	// OpenAI
-	OpenAIKey       string `env:"OPEN_AI_KEY"`
-	OpenAIModel     string `env:"OPEN_AI_MODEL" envDefault:"gpt-4-0125-preview"`
-	OpenAIServerURL string `env:"OPEN_AI_SERVER_URL" envDefault:"https://api.openai.com/v1"`
+	// GROQ
+	GroqKey       string `env:"GROQ_API_KEY"`
+	GroqModel     string `env:"GROQ_MODEL" envDefault:"mixtral-8x7b-32768"`
+	GroqServerURL string `env:"GROQ_SERVER_URL" envDefault:"https://api.groq.com/openai/v1"`
 
 	// Ollama
 	OllamaModel     string `env:"OLLAMA_MODEL"`
